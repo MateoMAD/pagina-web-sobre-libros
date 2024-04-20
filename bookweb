@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+    
+    
+    <nav>
+     <h1 class="logo">logo</h1>
+    <ul class="listas">
+        <li><a href="#">iniciar sesion</a></li>
+        <li><a href="#">registrarse</a></li>
+        <li><a href="#">novedades</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+<img src="seis-libros-arriba.jpg" class="foto" alt="libros">
+</main>
+    </main>
+    <footer></footer>
+</body>
+</html>
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+}
+nav{
+    background-color: #111;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+  
+display: inline-flex;
+    padding: 10px;
+    color: rgb(237, 253, 13);
+}
+.listas{
+    gap:5px;
+    align-items: center;
+    font-size: 12px;
+    list-style-type: none;
+   
+    display: inline-flex;
+
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(237, 253, 13);
+   
+}
+.foto
+{
+    width: 100%;
+}
