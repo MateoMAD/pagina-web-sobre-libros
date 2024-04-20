@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
 </head>
 <body>
     <header>
@@ -24,7 +25,25 @@
 <img src="seis-libros-arriba.jpg" class="foto" alt="libros">
 </main>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="column">
+                <img src="https://img.freepik.com/foto-gratis/abierto-volando-libros-antiguos_1232-2096.jpg?t=st=1713234223~exp=1713237823~hmac=594364ad26f96f864fbd714d030f48de9eb5e11a2b4a2d4d0ffe62d667198ab0&w=100"> 
+            </div>
+            <div class="column main-column"> 
+                  <img src="assets/logos/bubok.png" alt="bubok">
+                  <img src="assets/logos/Bookstores.jpg" alt="Bookstores">
+                  <img src="assets/logos/SBS.jpg" alt="SBS">
+            </div>
+            <div class="column">
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 
@@ -33,14 +52,15 @@
     margin: 0;
     padding: 0;
 }
+
 body{
-    background-color: #000;
+    background-color: black;
 }
 nav{
-    background-color: #111;
+    background-color: #333;
     display: flex;
     text-align: center;
-    justify-content: space-between;
+justify-content: space-between;
 }
 
 
@@ -51,11 +71,12 @@ display: inline-flex;
     color: rgb(237, 253, 13);
 }
 .listas{
-    gap:5px;
+
+    gap: 5px;;
     align-items: center;
-    font-size: 12px;
+    font-size: 11px;
     list-style-type: none;
-   
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline-flex;
 
 }
@@ -70,4 +91,55 @@ a:hover{
 .foto
 {
     width: 100%;
+
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+}
+
+.main-column {
+    flex-grow: 2;
+}
+
+.column.main-column img {
+    width: 100px; 
+    height: auto; 
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
 }
